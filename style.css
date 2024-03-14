@@ -1,0 +1,264 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3B556D;
+}
+
+/*Partie Header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 30px;
+    background-color: #0B162C;
+    color: white;
+}
+
+.creator {
+    width: 33%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.title {
+    width: 33%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 33%;
+    font-size: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.links i {
+    margin-right: 10px;
+}
+
+/*Partie Main*/
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    border-radius: 50px;
+    background-color: #5FC2BA;
+}
+
+/*Formulaire*/
+
+.partForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px black solid;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    font-size: 30px;
+}
+
+.partInput {
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="radio"] {
+    transform: scale(1.2);
+}
+
+.button {
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    color: #3B556D;
+}
+
+/*Jeu*/
+
+.partGame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    border-bottom: 2px black solid;
+}
+
+.vs {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.game p {
+    font-size: 35px;
+}
+
+.images {
+    width: 250px;
+}
+
+/* Resultat */
+
+.result {
+    height: 100px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+/* Version Tablette*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* Header */
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .links a {
+        margin-right: 20px;
+        font-size: 20px;
+        text-align: right;
+    }
+
+    /* Partie Main */
+    .container {
+        width: 80%;
+    }
+
+    /* Formulaire */
+    form {
+        width: 90%;
+        font-size: 25px;
+    }
+
+    /* Jeu */
+    .partGame {
+        height: 250px;
+    }
+
+    .vs {
+        font-size: 45px;
+    }
+
+    .game p {
+        font-size: 30px;
+    }
+
+    .images {
+        width: 200px;
+    }
+
+}
+
+/* Version Mobile*/
+
+@media screen and (max-width:767px) {
+
+    /* Header */
+    header {
+        height: 110px;
+        margin-bottom: 15px;
+    }
+
+    .creator {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .links a {
+        margin-right: 20px;
+        text-align: right;
+        font-size: 15px;
+    }
+
+    /* Partie MAIN */
+
+    .container {
+        width: 95%;
+        border-radius: 25px;
+    }
+
+    /* Formulaire */
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0 10px 0;
+        font-size: 25px;
+    }
+
+    .partInput {
+        flex-direction: column;
+    }
+
+    /* Jeu */
+
+    .partGame {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .vs {
+        font-size: 30px;
+    }
+
+    .images {
+        width: 150px;
+    }
+
+    .result {
+        font-size: 25px;
+        text-align: center;
+    }
+}
